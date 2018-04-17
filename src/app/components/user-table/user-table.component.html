@@ -1,0 +1,43 @@
+<div>
+  <div>
+    <mat-form-field fxFlex="10">
+      Service Tester
+    </mat-form-field>
+    <hr>
+    <mat-dialog-actions align="left">
+      <button type="button" mat-raised-button color="accent" mat-button (click)="getServices()">Reset</button>
+      <button type="button" mat-raised-button color="accent" mat-button (click)="testAllServices()">Test All Services</button>
+      <a href="https://forge.lmig.com/wiki/display/CIQUAU/Virtualization+of+services+using+Togglz" target="_blank">Toggles Page</a>
+    </mat-dialog-actions>
+    <p></p>
+  </div>
+  <div>
+    <mat-table [dataSource]="dataSource">
+      <ng-container matColumnDef="button">
+        <mat-header-cell *matHeaderCellDef>Check Service</mat-header-cell>
+        <mat-cell *matCellDef="let group" (click)="$event.stopPropagation()">
+          <button id="checkBtn" mat-raised-button color="accent" mat-button (click)="getServices()">
+            <mat-icon>Check</mat-icon>
+          </button>
+        </mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+        <mat-cell *matCellDef="let user">{{user.name}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="email">
+        <mat-header-cell *matHeaderCellDef>Email</mat-header-cell>
+        <mat-cell *matCellDef="let user">{{user.email}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="company">
+          <mat-header-cell *matHeaderCellDef>Company</mat-header-cell>
+          <mat-cell *matCellDef="let user">{{user.company.name}}</mat-cell>
+        </ng-container>
+
+
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns"></mat-row>
+
+    </mat-table>
+  </div>
+</div>

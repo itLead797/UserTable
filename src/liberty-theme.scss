@@ -1,0 +1,263 @@
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+/* http://mcg.mbitson.com/#!?libertyblue=%235381ac&corporateblue=%23002663&corporategray=%23616265&libertygreen=%236c953c&libertyorange=%23d97a23&libertyred=%23c9282d&themename=liberty */
+
+$mat-liberty-blue: (
+    50 : #eaf0f5,
+    100 : #cbd9e6,
+    200 : #a9c0d6,
+    300 : #87a7c5,
+    400 : #6d94b8,
+    500 : #5381ac,
+    600 : #4c79a5,
+    700 : #426e9b,
+    800 : #396492,
+    900 : #295182,
+    A100 : #c6deff,
+    A200 : #93c1ff,
+    A400 : #60a4ff,
+    A700 : #4795ff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-corporate-blue: (
+    50 : #e0e5ec,
+    100 : #b3bed0,
+    200 : #8093b1,
+    300 : #4d6792,
+    400 : #26477a,
+    500 : #002663,
+    600 : #00225b,
+    700 : #001c51,
+    800 : #001747,
+    900 : #000d35,
+    A100 : #6d80ff,
+    A200 : #3a54ff,
+    A400 : #0727ff,
+    A700 : #001fec,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$mat-corporate-gray: (
+    50 : #ececed,
+    100 : #d0d0d1,
+    200 : #b0b1b2,
+    300 : #909193,
+    400 : #797a7c,
+    500 : #616265,
+    600 : #595a5d,
+    700 : #4f5053,
+    800 : #454649,
+    900 : #333437,
+    A100 : #95aef7,
+    A200 : #6689f3,
+    A400 : #275dff,
+    A700 : #0e4aff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+$mat-liberty-green: (
+    50 : #edf2e8,
+    100 : #d3dfc5,
+    200 : #b6ca9e,
+    300 : #98b577,
+    400 : #82a559,
+    500 : #6c953c,
+    600 : #648d36,
+    700 : #59822e,
+    800 : #4f7827,
+    900 : #3d671a,
+    A100 : #caffa2,
+    A200 : #acff6f,
+    A400 : #8fff3c,
+    A700 : #80ff23,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-liberty-orange: (
+    50 : #faefe5,
+    100 : #f4d7bd,
+    200 : #ecbd91,
+    300 : #e4a265,
+    400 : #df8e44,
+    500 : #d97a23,
+    600 : #d5721f,
+    700 : #cf671a,
+    800 : #ca5d15,
+    900 : #c04a0c,
+    A100 : #fff2ec,
+    A200 : #ffceb9,
+    A400 : #ffaa86,
+    A700 : #ff996d,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-liberty-red: (
+    50 : #f9e5e6,
+    100 : #efbfc0,
+    200 : #e49496,
+    300 : #d9696c,
+    400 : #d1484d,
+    500 : #c9282d,
+    600 : #c32428,
+    700 : #bc1e22,
+    800 : #b5181c,
+    900 : #a90f11,
+    A100 : #ffd8d8,
+    A200 : #ffa5a6,
+    A400 : #ff7273,
+    A700 : #ff585a,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+$mat-liberty-bright-orange: (
+    50 : #fef2e1,
+    100 : #fddfb4,
+    200 : #fcca83,
+    300 : #fab451,
+    400 : #f9a42b,
+    500 : #f89406,
+    600 : #f78c05,
+    700 : #f68104,
+    800 : #f57703,
+    900 : #f36502,
+    A100 : #ffffff,
+    A200 : #ffefe6,
+    A400 : #ffceb3,
+    A700 : #ffbe9a,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue.
+$primary:  mat-palette($mat-corporate-gray, 500, 300, 900);
+$accent: mat-palette($mat-liberty-orange, 500, 300, 900);
+
+// The warn palette is optional (defaults to red).
+$warn:    mat-palette($mat-liberty-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$theme: mat-light-theme($primary, $accent, $warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($theme);
+
+button {
+    .mat-accent {
+        color: white;
+    }
+}

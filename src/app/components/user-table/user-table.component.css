@@ -1,0 +1,23 @@
+mat-form-field {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 24pt;
+}
+
+button {
+  margin: 10px;
+  background-color: CornflowerBlue;
+
+}
+
+.mat-column-button {
+  flex: 0 0 100px;
+}
+
+#checkBtn {
+  background-color: CornflowerBlue;
+}
+
+#toggle {
+  background-color: limegreen;
+}
